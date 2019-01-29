@@ -10,7 +10,7 @@
 <table class="table-bordered"> 
  <tr>
    <td rowspan="8"> 
-   <img src="<c:url value="/resources/images/${product.productId}.png" />" alt = "Generic placeholder thumbnail"/>
+   <img src="<c:url value="/resources/images/${product.productId}.png" />" height="250" alt = "Generic placeholder thumbnail"/>
    </td>
    <td> Product Id </td>
    <td> ${product.productId}</td>
