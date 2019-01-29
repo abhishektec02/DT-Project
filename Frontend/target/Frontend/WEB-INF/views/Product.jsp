@@ -1,6 +1,7 @@
-<%@ page language="java" contentType="text/html" session="false"%>
-<%@include file="Header.jsp" %>
+<%@ page language="java" contentType="text/html" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@include file="Header.jsp" %>
+
 
 
 <form:form action="InsertProduct" modelAttribute="product" method="post" enctype="multipart/form-data">  
