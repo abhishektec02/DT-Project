@@ -58,7 +58,7 @@ public class ProductController
 		m.addAttribute("pageinfo" , "Manage Product");
 		m.addAttribute("categoryList", this.getCategories());
 		
-		String imagepath="C:\\Users\\hi\\DT-Project-1\\Frontend\\src\\main\\webapp\\resources\\images\\";
+		String imagepath="C:\\Users\\hi\\Documents\\GitHub\\DT-Project\\Frontend\\src\\main\\webapp\\resources\\images\\";
 		imagepath=imagepath+String.valueOf(product.getProductId())+".png";
 		
 		File image=new File(imagepath);
