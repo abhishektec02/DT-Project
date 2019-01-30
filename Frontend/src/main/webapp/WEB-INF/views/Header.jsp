@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title> ${pageinfo}-FashionWorld </title>
+<title> ${pageinfo}BeYou </title>
 
 <meta name=viewport content="width=device-width , intial-scale=1">
 
@@ -19,7 +19,7 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
            <div class="navbar-header"> 
-               <a class="navbar-brand" href="#"> FashionWorld </a>
+               <a class="navbar-brand" href="#"> BeYou </a>
            </div>
       <c:if test="${!sessionScope.loggedIn}">
            <ul class="nav navbar-nav"> 
