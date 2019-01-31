@@ -1,10 +1,13 @@
 <%@ page language="java" contentType="text/html"%>
-
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@include file="Header.jsp" %>
-  
+<style>
+	table{width:50%; height:250px;}
+</style>
+ <body style="background-image: url('<c:url value='resources/images/pay.jpg'/>')"> 
 <form action="perform_login" method="post">  
 <table border="1" align="center">
-  
+ 
   <tr bgcolor="gray">
     <td colspan="2"> <center>Sign in </center> </td>
   </tr>
@@ -25,4 +28,5 @@
      
 </table>
 </form>
+</body>
   
