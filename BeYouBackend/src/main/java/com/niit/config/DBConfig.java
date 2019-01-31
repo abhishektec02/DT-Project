@@ -15,6 +15,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.niit.model.CartItem;
 import com.niit.model.Category;
+import com.niit.model.OrderDetail;
 import com.niit.model.Product;
 import com.niit.model.Supplier;
 import com.niit.model.UserDetail;
@@ -32,8 +33,8 @@ public class DBConfig
 		DriverManagerDataSource dataSource=new DriverManagerDataSource();
 		
 		dataSource.setDriverClassName("org.h2.Driver");
-		dataSource.setUrl("jdbc:h2:~/test1");
-		dataSource.setUsername("Abhishek");
+		dataSource.setUrl("jdbc:h2:~/dt");
+		dataSource.setUsername("abhishek");
 		dataSource.setPassword("12345");
 		System.out.println("---DataSource Object is Created----");
 		return dataSource;
@@ -56,6 +57,7 @@ public class DBConfig
 		factory.addAnnotatedClass(Product.class);
 		factory.addAnnotatedClass(UserDetail.class);
         factory.addAnnotatedClass(CartItem.class);
+        factory.addAnnotatedClass(OrderDetail.class);
 		System.out.println("---SessionFactory Object  Created ----");
 		
 		return factory.buildSessionFactory();

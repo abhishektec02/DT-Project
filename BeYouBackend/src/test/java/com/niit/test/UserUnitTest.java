@@ -1,5 +1,6 @@
 package com.niit.test;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.BeforeClass;
@@ -24,17 +25,17 @@ public class UserUnitTest {
 	}
 	
 	@Test
-	@Ignore
+	//@Ignore
 	public void registerUserTest()
 	{
 		UserDetail user=new UserDetail();
 		
-		user.setUsername("abhishek");
+		user.setUsername("rajat");
 		user.setPassword("pass123");
 		user.setEnabled(true);
-		user.setRole("ROLE_ADMIN");
-		user.setCustomerName("Abhishek Singh");
-		user.setCustomerAddr("Delhi");
+		user.setRole("ROLE_USER");
+		user.setCustomerName("rajat singh");
+		user.setCustomerAddr("mumbai");
 		
 		assertTrue("Problem in adding User:",userDAO.registerUser(user));
 	}
